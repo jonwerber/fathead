@@ -1,6 +1,3 @@
-/** {
-  border: 1px solid red;
-}*/
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 /*                                        START OF VARIABLES                                        */
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -111,19 +108,19 @@ p {
 }
 
 .container {
-  @media screen and (max-device-width: 500px){
+  @media screen and (max-device-width: 500px) {
     margin-top: 5rem;
   }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 950px) {
     margin-top: 5rem;
   }
-  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2){
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
     margin-top: 8rem;
   }
-  @media screen and (min-width: 500px) and (max-width: 700px){
+  @media screen and (min-width: 500px) and (max-width: 700px) {
     margin-top: 8rem;
   }
-  @media screen and (min-width: 700px) and (max-width: 950px){
+  @media screen and (min-width: 700px) and (max-width: 950px) {
     margin-top: 14rem;
   }
 }
@@ -154,10 +151,11 @@ p {
     }
   }
 }
+
 .mobile-hero {
   display: none;
   @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 950px) {
-   margin-top: 5rem;
+    margin-top: 5rem;
     z-index: 1000;
     display: block;
     height: 5rem;
