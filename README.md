@@ -1,5 +1,4 @@
 ## Jonathan Werber : Fathead Project
-![alt tag](https://jonwerber.github.io/fathead.gif)
 
 ### The basics :
 
@@ -21,3 +20,6 @@
 #### General things
  * [Pixel Perfect](http://www.welldonecode.com/perfectpixel/) for pixel perfect tweaking
  * [Webstorm](https://www.jetbrains.com/webstorm/) for my ide
+
+ #### Process GIF :
+ ![alt tag](https://jonwerber.github.io/fathead.gif)
