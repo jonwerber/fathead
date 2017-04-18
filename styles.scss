@@ -1,0 +1,526 @@
+/** {
+  border: 1px solid red;
+}*/
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/*                                        START OF VARIABLES                                        */
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////
+/*     START COLOR VARIABLES        */
+$navy-blue: #074f9a;
+$lions-blue: #0e6eb8;
+.accent-color {
+  color: $lions-blue;
+}
+
+$orange: #ff632d;
+$dark-grey: #303030;
+$med-grey: #5d5d5d;
+$light-grey: #acacac;
+$off-white: #fafafa;
+// for table
+
+/*     END COLOR VARIABLES        */
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+/*         START @MEDIA QUERIES        */
+
+/*          END @MEDIA QUERIES           */
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+/*          START FONT VARIABLES       */
+
+$roboto-con: 'Roboto Condensed', sans-serif;
+
+//for use in font weight
+$roboto-bold: 700;
+$roboto-regular: 400;
+
+//roboto condensened bold (card header & steps)
+//roboto condensened normal (btn + card text + headers)
+
+/*          END FONT VARIABLES           */
+//////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/*                                         END OF VARIABLES                                         */
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/*                                 START  OF GLOBAL STYLES                                        */
+///////////////////////////////////////////////////////////////////////////////////////////////////
+html {
+  font-size: 16px;
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+    font-size: 25px
+  }
+}
+
+html, body {
+  font-family: $roboto-con;
+  padding: 0;
+  margin: 0;
+  color: $med-grey;
+}
+
+h1, h2, h3, h4, h5, p {
+  text-align: center;
+  margin: auto auto;
+}
+
+h1 {
+  font-size: 2.8rem;
+  letter-spacing: .1rem;
+}
+
+p {
+  @media only screen and (max-width: 950px) {
+    max-width: 95%;
+    margin: 1.5rem 3rem;
+  }
+  max-width: 950px;
+  margin: 1.5rem auto;
+}
+
+* {
+  transition: all 0.35s ease;
+  max-width: 100%;
+}
+
+.grey-hr {
+  background-color: $light-grey;
+  margin: 0 auto;
+  height: 1px;
+  width: 80%;
+
+}
+
+.pad-top-sm {
+  padding-top: 1.5rem;
+}
+
+.pad-top-med {
+  padding-top: 3.125rem;
+
+}
+
+.pad-top-lrg {
+  padding-top: 4.7rem;
+}
+
+.container {
+  @media screen and (max-device-width: 500px){
+    margin-top: 5rem;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 950px) {
+    margin-top: 5rem;
+  }
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2){
+    margin-top: 8rem;
+  }
+  @media screen and (min-width: 500px) and (max-width: 700px){
+    margin-top: 8rem;
+  }
+  @media screen and (min-width: 700px) and (max-width: 950px){
+    margin-top: 14rem;
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+/*                                   END OF GLOBAL STYLES                                         */
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////
+/*             START HEADER            */
+.small-header {
+  display: none;
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 950px) {
+    z-index: 1000;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 5rem;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 3px 10px 1.5px $med-grey;
+    .small-header--fh-logo {
+      margin-top: 1rem;
+      max-height: 4rem;
+    }
+  }
+}
+.mobile-hero {
+  display: none;
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 950px) {
+   margin-top: 5rem;
+    z-index: 1000;
+    display: block;
+    height: 5rem;
+    background-color: #fff;
+    width: 100%;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.header {
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 950px) {
+    display: none;
+  }
+  text-align: center;
+
+}
+
+.header-img {
+  width: 100%;
+}
+
+.black-line {
+  width: 100%;
+  height: 36px;
+  background-color: #000;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.blue-line {
+  width: 100%;
+  background-color: $navy-blue;
+  height: 65px;
+}
+
+.header-large {
+  font-size: 2.5rem;
+  //TODO : em this shit
+  letter-spacing: .8px;
+  font-weight: $roboto-regular;
+  margin: 56px 0;
+}
+
+.header-underline-container {
+  position: relative;
+}
+
+.step-header {
+  margin-top: 6rem;
+  font-size: 2rem;
+}
+
+.step-subheader {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: $roboto-regular;
+}
+
+.header-underline {
+  font-weight: $roboto-regular;
+  color: $lions-blue;
+}
+
+.header-underline:after {
+  content: "";
+  background: #0e6eb8;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -27.5px;
+  width: 55px;
+  height: 4px;
+}
+
+.header-p {
+  line-height: 36px;
+  margin-bottom: 100px;
+}
+
+/*             END HEADER                */
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+/*             START CARD              */
+
+.card-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+// flex container for cards
+
+.card {
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+    width: 90%;
+    height: auto;
+    margin: 1rem auto;
+  }
+  width: 410px;
+  height: 600px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 10px 1.5px rgb(192, 192, 192);
+  margin: 15px;
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+.card:hover {
+  box-shadow: 0px 3px 10px 1.5px $dark-grey;
+}
+
+.focused-shadow {
+  box-shadow: 0px 5px 7px 4.5px rgb(169, 169, 169);
+}
+
+.popular__tag {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  width: 140px;
+  padding: 8px;
+  background-color: $lions-blue;
+  color: #fff;
+  text-align: center;
+  font-weight: $roboto-regular;
+  cursor: pointer;
+}
+
+.popular__tag:hover {
+  background-color: $orange;
+}
+
+//        START CARDS WITHOUT BUTTONS
+
+.card__header {
+  font-weight: $roboto-bold;
+  position: relative;
+  font-size: 1.2rem;
+  margin-top: 55px;
+}
+
+.card__p {
+  line-height: 1.25rem;
+}
+
+.card__header:after {
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+    display: none;
+  }
+  content: "";
+  background: #0e6eb8;
+  position: absolute;
+  bottom: -11px;
+  left: 185px;
+  height: 2px;
+  width: 40px;
+
+}
+
+.card--active-shadow {
+
+}
+
+.card--shadow {
+
+}
+
+.card__button {
+
+}
+
+.card__title {
+  //TODO : make mini blue hr
+}
+
+.fathead--type {
+  line-height: 1.45rem;
+  font-size: 1rem;
+  width: 19rem;
+  color: $dark-grey;
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+    width: 90%;
+    height: auto;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  a {
+    color: $lions-blue;
+    text-decoration: none;
+  }
+  a:visited {
+    color: $lions-blue;
+  }
+  a:hover {
+    color: $orange;
+  }
+}
+
+//        END CARDS WITHOUT BUTTONS
+//        START CARDS ***WITH**** BUTTONS
+
+.card-shop__header {
+  font-weight: $roboto-bold;
+  position: relative;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+.card-shop__header:after {
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+    display: none;
+  }
+  content: "";
+  background: #0e6eb8;
+  position: absolute;
+  bottom: -11px;
+  left: 185px;
+  height: 2px;
+  width: 40px;
+}
+
+.shop--p {
+  width: 345px;
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+    width: 90%;
+    height: auto;
+    font-size: 1rem;
+    margin-bottom: 5rem;
+  }
+}
+
+.shop--button {
+  background-color: $orange;
+  color: #fff;
+  text-align: center;
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 30px;
+  left: 55px;
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+    width: 90%;
+    margin: 0 auto 2rem;
+    left: 0;
+    font-size: 1.8rem;
+    padding: .5rem;
+    position: relative;
+  }
+}
+
+.shop--button:hover {
+  background-color: $lions-blue;
+  cursor: pointer;
+}
+
+//        END CARDS ***WITH**** BUTTONS
+
+/*               END CARD                */
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+/*            START TABLE              */
+.table-container {
+  margin-top: 3rem;
+}
+
+.small-table-replacement {
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+    display: block;
+  }
+  @media only screen and (max-width: 650px) {
+    display: block;
+  }
+  display: none;
+  h2 {
+    margin: 3rem auto .7rem;
+    color: $lions-blue;
+    text-decoration: underline;
+    font-weight: $roboto-bold;
+  }
+  h4 {
+    color: $med-grey;
+    font-weight: $roboto-regular;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+table {
+  @media only screen and (max-width: 650px) {
+    display: none;
+  }
+  @media only screen and (min-width: 650px) and (max-width: 1100px) {
+    width: 95%;
+  }
+  @media only screen and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
+    display: none;
+  }
+  max-width: 1065px;
+  margin: 0 auto;
+  background-color: $off-white;
+  border-collapse: collapse;
+
+}
+
+th, td {
+  @media only screen and (min-width: 650px) and (max-width: 1100px) {
+    padding: 20px auto;
+  }
+  padding: 20px;
+  text-align: center;
+  font-weight: $roboto-bold;
+  border: 1px solid $dark-grey;
+
+}
+
+th {
+  @media only screen and (min-width: 650px) and (max-width: 1100px) {
+    width: 150px;
+  }
+  background-color: $lions-blue;
+  color: #fff;
+  width: 216px;
+
+}
+
+/*              END TABLE                */
+//////////////////////////////////////////
+
+//////////////////////////////////////////
+/*             START FOOTER            */
+.footer {
+  width: 100%;
+  text-align: center;
+  a {
+    color: $lions-blue;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $orange;
+  }
+  p {
+    margin-bottom: 5rem;
+  }
+}
+
+.blue-bottom {
+  height: 400px;
+  width: 100%;
+  background-color: $lions-blue;
+}
+
+/*             END FOOTER                */
+//////////////////////////////////////////
