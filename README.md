@@ -1,10 +1,13 @@
 ## Jonathan Werber : Fathead Project
+![alt tag](https://jonwerber.github.io/fathead.gif)
 
 ### The basics :
 
  * `git clone https://github.com/jonwerber/fathead.git` to clone repo
- * `gulp watch` to launch dev enviornment
- * `gulp build` to trigger build
+ * `gulp watch` to launch dev enviornment,  (try running this, and opening one full size window and one small one to have browsersync scroll you through both simultaneously)
+ * `gulp build` triggers a build
+
+ #### or just open index.html in your browser
 
 
 ### Stuff used to make this:
