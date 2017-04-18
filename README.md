@@ -2,7 +2,7 @@
 
 ### The basics :
 
- * pull repo `git clone https://github.com/jonwerber/fathead.git`
+ * `git clone https://github.com/jonwerber/fathead.git` to clone repo
  * `gulp watch` to launch dev enviornment
  * `gulp build` to trigger build
 
